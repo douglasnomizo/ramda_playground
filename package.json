@@ -1,0 +1,28 @@
+{
+  "name": "ramda_playground",
+  "version": "1.0.0",
+  "description": "Playground for testing Ramda functional approach to solve problems",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "ramda",
+    "functional",
+    "programming",
+    "fp",
+    "javascript",
+    "node",
+    "nodejs",
+    "js"
+  ],
+  "author": "Douglas Nomizo",
+  "license": "MIT",
+  "dependencies": {
+    "ramda": "^0.23.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
