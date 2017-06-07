@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/douglasnomizo/ramda_playground.svg?branch=master)](https://travis-ci.org/douglasnomizo/ramda_playground)
 [![Dependency Status](https://david-dm.org/douglasnomizo/ramda_playground.svg)](https://david-dm.org/douglasnomizo/ramda_playground)
+[![Coverage Status](https://coveralls.io/repos/github/douglasnomizo/ramda_playground/badge.svg?branch=master)](https://coveralls.io/github/douglasnomizo/ramda_playground?branch=master)
 
 # Ramda Playground
 
