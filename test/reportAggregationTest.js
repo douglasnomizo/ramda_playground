@@ -1,6 +1,7 @@
+/* eslint-disable object-curly-newline */
+
 import test from 'ava';
 import reportAggregation from '../solutions/reportAggregation';
-
 
 test('should group by type and color and pick the largest by size', (t) => {
   const initialReport = {
