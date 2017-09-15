@@ -5,6 +5,8 @@
 
 # Ramda Playground
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/douglasnomizo/ramda_playground.svg)](https://greenkeeper.io/)
+
 Playground for testing Ramda functional approach to solve common problems.
 
 Currently with the solution for:
