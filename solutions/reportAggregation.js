@@ -52,19 +52,34 @@
 
 */
 
-import { __, add, complement, curry, filter, length, map, pathOr, prop, propEq, sum } from 'ramda';
+import {
+  __,
+  add,
+  complement,
+  curry,
+  filter,
+  length,
+  map,
+  pathOr,
+  prop,
+  propEq,
+  sum,
+} from "ramda";
 
 const propTrue = propEq(__, true);
-const leader = propTrue('leader');
-const active = propTrue('active');
+const leader = propTrue("leader");
+const active = propTrue("active");
 const inactive = complement(active);
 
 const reportAggregation = (initialReport, timesheets) => {
   const activeEmployees = filter(active, timesheets);
   const inactiveEmployees = filter(inactive, timesheets);
   const leaders = filter(leader, timesheets);
-  const hoursWorked = sum(map(prop('hours'), activeEmployees));
-  const totalHoursWorked = add(hoursWorked, pathOr(0, ['ever', 'totalHoursWorked'], initialReport));
+  const hoursWorked = sum(map(prop("hours"), activeEmployees));
+  const totalHoursWorked = add(
+    hoursWorked,
+    pathOr(0, ["ever", "totalHoursWorked"], initialReport)
+  );
 
   return {
     currentMonth: {

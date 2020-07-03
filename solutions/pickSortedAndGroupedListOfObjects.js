@@ -41,15 +41,15 @@
   }
 
 */
-import { descend, groupBy, head, map, pipe, prop, sortWith } from 'ramda';
+import { descend, groupBy, head, map, pipe, prop, sortWith } from "ramda";
 
-const pickSortedAndGroupedListOfShapes = shapes =>
+const pickSortedAndGroupedListOfShapes = (shapes) =>
   pipe(
-    groupBy(prop('type')),
-    map(groupBy(prop('color'))),
-    map(map(sortWith([descend(prop('size'))]))),
+    groupBy(prop("type")),
+    map(groupBy(prop("color"))),
+    map(map(sortWith([descend(prop("size"))]))),
     map(map(head)),
-    map(map(prop('size'))),
+    map(map(prop("size")))
   )(shapes);
 
 export default pickSortedAndGroupedListOfShapes;
