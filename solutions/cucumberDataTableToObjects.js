@@ -26,9 +26,9 @@
   ]
 
 */
-import { map, prop, splitAt, zipObj } from 'ramda';
+import { map, prop, splitAt, zipObj } from "ramda";
 
 export default (dataTable) => {
-  const [[header], body] = splitAt(1, prop('rawTable', dataTable));
+  const [[header], body] = splitAt(1, prop("rawTable", dataTable));
   return map(zipObj(header), body);
 };
